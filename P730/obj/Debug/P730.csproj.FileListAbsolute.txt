@@ -1,0 +1,6 @@
+C:\devl\T200\D\Cs2\P730\bin\Debug\P730.exe.config
+C:\devl\T200\D\Cs2\P730\bin\Debug\P730.exe
+C:\devl\T200\D\Cs2\P730\bin\Debug\P730.pdb
+C:\devl\T200\D\Cs2\P730\obj\Debug\P730.csproj.CoreCompileInputs.cache
+C:\devl\T200\D\Cs2\P730\obj\Debug\P730.exe
+C:\devl\T200\D\Cs2\P730\obj\Debug\P730.pdb

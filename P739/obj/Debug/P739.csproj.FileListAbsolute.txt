@@ -1,0 +1,6 @@
+C:\devl\T200\D\Cs2\P739\bin\Debug\P739.exe.config
+C:\devl\T200\D\Cs2\P739\bin\Debug\P739.exe
+C:\devl\T200\D\Cs2\P739\bin\Debug\P739.pdb
+C:\devl\T200\D\Cs2\P739\obj\Debug\P739.csproj.CoreCompileInputs.cache
+C:\devl\T200\D\Cs2\P739\obj\Debug\P739.exe
+C:\devl\T200\D\Cs2\P739\obj\Debug\P739.pdb
