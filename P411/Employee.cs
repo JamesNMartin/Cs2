@@ -1,6 +1,7 @@
 ﻿//CHANGE HISTORY
 //DATE          DEVELOPER          DESCRIPTION       
-//2019-01-26    jmsnmrtn           FILE CREATION FOR Employee CLASS
+//2019-01-26    jmsnmrtn           FILE CREATION FOR Employee class
+//
 
 namespace P411
 {
