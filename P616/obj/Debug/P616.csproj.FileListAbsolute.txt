@@ -7,7 +7,6 @@ C:\devl\T200\D\Cs2\P616\obj\Debug\P616.pdb
 C:\Users\james\source\repos\Cs2\P616\bin\Debug\P616.exe.config
 C:\Users\james\source\repos\Cs2\P616\bin\Debug\P616.exe
 C:\Users\james\source\repos\Cs2\P616\bin\Debug\P616.pdb
-C:\Users\james\source\repos\Cs2\P616\obj\Debug\P616.csprojAssemblyReference.cache
 C:\Users\james\source\repos\Cs2\P616\obj\Debug\P616.csproj.CoreCompileInputs.cache
 C:\Users\james\source\repos\Cs2\P616\obj\Debug\P616.exe
 C:\Users\james\source\repos\Cs2\P616\obj\Debug\P616.pdb

@@ -1,4 +1,9 @@
-﻿using System;
+﻿//CHANGE HISTORY
+//DATE          DEVELOPER          DESCRIPTION       
+//2019-01-26    jmsnmrtn           FILE CREATION FOR p739 AND CREATED PROGRAM MAIN METHOD
+//
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +23,75 @@ namespace P739
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(@"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   ______                            __                  ___              _      __           __   
+  / ____/___  ____ ___  ____  __  __/ /____  _____      /   |  __________(_)____/ /____  ____/ /   
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/_____/ /| | / ___/ ___/ / ___/ __/ _ \/ __  /    
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /  /_____/ ___ |(__  |__  ) (__  ) /_/  __/ /_/ /     
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/        /_/  |_/____/____/_/____/\__/\___/\__,_/      
+    ____           _/_/                __  _                                                       
+   /  _/___  _____/ /________  _______/ /_(_)___  ____                                             
+   / // __ \/ ___/ __/ ___/ / / / ___/ __/ / __ \/ __ \                                            
+ _/ // / / (__  ) /_/ /  / /_/ / /__/ /_/ / /_/ / / / /                                            
+/___/_/ /_/____/\__/_/   \__,_/\___/\__/_/\____/_/ /_/                                                                                                                                                                                                     
+How to use: 
+This program is made to help students learn their single digit multiplication. This program will 
+pick two random numbers that you then have to solve by simple multiplication. Your answer should 
+be a whole number WITHOUT decimals.
 
+Side note: On first launch and replaying the game it might take some time getting two random 
+numbers. Had to put a check to make sure you wouldn't always get 1x1, 2x2, 3x3, etc...
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+");
+            Game();
+        }
+        static void Game()
+        {
+            bool gameInProgress = true;
+            int randomIntOne = GenerateRandomInt();
+            int randomIntTwo = GenerateRandomInt();
+            while (randomIntOne == randomIntTwo)
+                /*SADLY THIS WAS ONE OF THE ONLY WAYS I COULD ENSURE THAT I WOULDNT CONSTANTLY GET THE SAME NUMBER TWICE.
+                SO SADLY YOU WILL NEVER GET A QUESTION LIKE 1x1, 2x2, 3x3, etc...*/
+            {
+                randomIntTwo = GenerateRandomInt();
+            }
+            int product = Calculate(randomIntOne, randomIntTwo);
+            Console.Write($"What is {randomIntOne} times {randomIntTwo}? ");
+            while (gameInProgress == true)//KEEPS THE GAME GOING WHILE THE USER IS TRYING TO GUESS THE ANSWER
+            {
+                int playerGuess = int.Parse(Console.ReadLine());
+                if (playerGuess == product)
+                {
+                    Console.WriteLine("YOU WIN!");
+                    gameInProgress = false;//ENDING THE GAME
+                    Console.Write("Would you like to play again? y[1] n[2]: ");
+                    int choice = int.Parse(Console.ReadLine());
+                    if (choice == 1)
+                    {
+                        Game();//RUN GAME AGAIN
+                    }
+                    else
+                    {
+                        Console.WriteLine("Goodbye!");//LEAVE GAME
+                    }
+                }
+                else
+                {
+                    Console.Write($"No please try again, what is {randomIntOne} times {randomIntTwo}? ");
+                }
+            }
+        }
+        static int GenerateRandomInt()
+        {
+            Random rand = new Random(DateTime.Now.Millisecond);/* FOUND THE ANSWER HOW TO FIX GETTING THE SAME RANDOM NUMBER HERE: https://stackoverflow.com/a/33462155 */
+            return rand.Next(0, 9);//RANDOM NUMBER BETWEEN 0 AND 9
+        }
+        static int Calculate(int i, int j)//CALCULATE THE PRODUCT OF THE TWO RANDOM NUMBERS TO COMPARE TO USER GUESS
+        {
+            return i * j;
         }
     }
 }
