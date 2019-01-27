@@ -1,7 +1,8 @@
 ﻿//CHANGE HISTORY
 //DATE          DEVELOPER          DESCRIPTION       
-//2019-01-26    jmsnmrtn           FILE CREATION FOR p411 AND CREATED PROGRAM MAIN METHOD
-//                                 
+//2019-01-26    jmsnmrtn           p411 CREATED PROGRAM MAIN METHOD
+//2019-01-26    jmsnmrtn           ADDED CONSOLE GUI AND COMMENTS
+
 
 using System;
 using System.Collections.Generic;
@@ -43,12 +44,12 @@ you would like to give him/her.
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 ");
-            decimal raisePercentage = 0.10m;
+            decimal raisePercentage = 0.10m;//SET CONSTANT 10% FOR NO MAGIC NUMBERS
             Console.WriteLine("Employee #1");
-            Employee emp1 = new Employee("Hugh", "Honey", 4500.00m);
+            Employee emp1 = new Employee("Hugh", "Honey", 4500.00m);//NEW EMPLOYEE (FIRST NAME. LAST NAME, MONTHLY SALARY)
             Console.WriteLine($"{emp1.FirstName} {emp1.LastName}'s monthly salary is ${emp1.MonthlySalary} before the raise.");
             Console.WriteLine($"{emp1.FirstName} {emp1.LastName}'s yearly salary is ${emp1.YearlySalary} before the raise.");
-            emp1.Raise(raisePercentage);
+            emp1.Raise(raisePercentage);//APPLYING THE SET RATE FOR A RAISE ON EMPLOYEE
             Console.WriteLine($"{emp1.FirstName} {emp1.LastName}'s monthly salary is ${emp1.MonthlySalary} After the raise.");
             Console.WriteLine($"{emp1.FirstName} {emp1.LastName}'s yearly salary is ${emp1.YearlySalary} After the raise.");
 
@@ -56,10 +57,10 @@ you would like to give him/her.
 #####################################################################################################
 ");
             Console.WriteLine("Employee #2");
-            Employee emp2 = new Employee("Vic", "Vinegar", 3000.00m);
+            Employee emp2 = new Employee("Vic", "Vinegar", 3000.00m);//NEW EMPLOYEE (FIRST NAME. LAST NAME, MONTHLY SALARY)
             Console.WriteLine($"{emp2.FirstName} {emp2.LastName}'s monthly salary is ${emp2.MonthlySalary} before the raise.");
             Console.WriteLine($"{emp2.FirstName} {emp2.LastName}'s yearly salary is ${emp2.YearlySalary} before the raise.");
-            emp2.Raise(raisePercentage);
+            emp2.Raise(raisePercentage);//APPLYING THE SET RATE FOR A RAISE ON EMPLOYEE
             Console.WriteLine($"{emp2.FirstName} {emp2.LastName}'s monthly salary is ${emp2.MonthlySalary} After the raise.");
             Console.WriteLine($"{emp2.FirstName} {emp2.LastName}'s yearly salary is ${emp2.YearlySalary} After the raise.");
 
@@ -83,10 +84,10 @@ you would like to give him/her.
 #####################################################################################################
 ");
             Console.WriteLine("Employee #3");
-            Employee emp3 = new Employee(firstName, lastName, monthlySalary);
+            Employee emp3 = new Employee(firstName, lastName, monthlySalary);//NEW EMPLOYEE (FIRST NAME. LAST NAME, MONTHLY SALARY)
             Console.WriteLine($"{emp3.FirstName} {emp3.LastName}'s monthly salary is ${emp3.MonthlySalary} before the raise.");
             Console.WriteLine($"{emp3.FirstName} {emp3.LastName}'s yearly salary is ${emp3.YearlySalary} before the raise.");
-            emp3.Raise(selfSetRaise);//SHOWING THAT DIFFERENT RATES WORK
+            emp3.Raise(selfSetRaise);//SHOWING THAT DIFFERENT RATES WORK WITH A SELF SET RATE IN CONSOLE
             Console.WriteLine($"{emp3.FirstName} {emp3.LastName}'s monthly salary is ${emp3.MonthlySalary} After the {selfSetRaise * 100}% raise.");
             Console.WriteLine($"{emp3.FirstName} {emp3.LastName}'s yearly salary is ${emp3.YearlySalary} After the {selfSetRaise * 100}% raise.");
         }

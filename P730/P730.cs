@@ -1,7 +1,7 @@
 ﻿//CHANGE HISTORY
 //DATE          DEVELOPER          DESCRIPTION       
-//2019-01-26    jmsnmrtn           FILE CREATION FOR p730 AND CREATED PROGRAM MAIN METHOD
-//
+//2019-01-26    jmsnmrtn           p730 CREATED PROGRAM MAIN METHOD
+//2019-01-26    jmsnmrtn           ADDED SOME CONSOLE GUI AND ADDED MORE COMMENTS
 
 using System;
 using System.Collections.Generic;

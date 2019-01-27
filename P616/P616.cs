@@ -1,7 +1,8 @@
 ﻿//CHANGE HISTORY
 //DATE          DEVELOPER          DESCRIPTION       
-//2019-01-26    jmsnmrtn           FILE CREATION FOR p616 AND CREATED PROGRAM MAIN METHOD
-//
+//2019-01-26    jmsnmrtn           p616 CREATED PROGRAM MAIN METHOD
+//2019-01-26    jmsnmrtn           ADDED CONSOLE GUI AND HOW TO USE. ALSO ADDED COMMENTS TO CODE.
+
 
 using System;
 using System.Collections.Generic;

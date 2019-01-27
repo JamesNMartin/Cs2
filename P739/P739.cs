@@ -1,7 +1,7 @@
 ﻿//CHANGE HISTORY
 //DATE          DEVELOPER          DESCRIPTION       
-//2019-01-26    jmsnmrtn           FILE CREATION FOR p739 AND CREATED PROGRAM MAIN METHOD
-//
+//2019-01-26    jmsnmrtn           p739 CREATED PROGRAM MAIN METHOD
+//2019-01-26    jmsnmrtn           FINISHED UP ASSIGNMENT AND ADDED SOME COMMENTS TO CODE
 
 using System;
 using System.Collections.Generic;
